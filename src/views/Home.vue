@@ -1,8 +1,11 @@
 <template>
   <div id="app"> 
-    <AddTodo v-on:add-todo="addTodo"/>
-    <Todos v-bind:todos="todos" 
+    <!--<AddTodo v-on:add-todo="addTodo"/>
+    //<Todos v-bind:todos="todos" 
     v-on:del-todo="deleteTodo" />
+    -->
+
+    
     <Order/>
     
   </div>
@@ -10,21 +13,19 @@
  
 <script>
 
-import Todos from '../components/Todos.vue';
-import AddTodo from '../components/AddTodo';
+//import Todos from '../components/Todos.vue';
+//import AddTodo from '../components/AddTodo';
 import Order from '../components/Orders';
-import AddOrder from '../components/AddOrder'
 
 export default {
   name: "Home",
   components: {
 
-    Todos,
-    AddTodo,
+    //Todos,
+    //AddTodo,
     Order,
-    AddOrder,
-
   },
+  
   data() {
     return {
       todos: [

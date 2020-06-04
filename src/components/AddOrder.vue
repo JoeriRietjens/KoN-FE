@@ -29,7 +29,7 @@ export default {
                 name: this.Name,
                 coffeeType: this.CoffeeType,
                 sugar: this.Sugar,
-                milk: this.milk,
+                milk: this.Milk,
                 
             }
             // Send up to parent.
