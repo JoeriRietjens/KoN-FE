@@ -2,8 +2,8 @@
     <header class="header"> 
         <h1>Koffie of nie!!</h1>
         <div id="nav">
-            <router-link to="/">Home</router-link>| 
-            <router-link to="/Overview">Overview</router-link>
+            <router-link to="/">Place order</router-link>| 
+            <router-link to="/Overview">Order overview</router-link>
         </div>
     </header>
 </template>

@@ -17,7 +17,6 @@
         </form>
         
         <input @click="submitOrder" type="submit" value="Place order" class="placeOrderbtn">
-
     </div>
 </template>
 
@@ -39,7 +38,7 @@ export default {
             CoffeeType: '',
             Sugar: '',
             Milk: '',
-            //OrdersJson: ''
+            
         };
     },
     methods: {
@@ -68,15 +67,10 @@ export default {
             }
             this.user = user;
 
-            //this.products.push(this.SavedUsername)
+            
         },
         submitOrder(){
             try{
-                //console.log(this.products);
-                //this.OrdersJson = JSON.stringify(this.products);
-                //this.OrdersJson = JSON.parse(JSON.stringify(this.products))
-                //console.log(this.OrdersJson);
-
                 
                 const productDTO = { ...this.user, "products": this.products};
                 console.log(this.products)
@@ -87,7 +81,7 @@ export default {
                     console.log(productDTO)
                     console.log(JSON.stringify(productDTO))
 
-            //console.log("products send succesfully to api")
+           
             }
             catch(e){
                 console.log(e);

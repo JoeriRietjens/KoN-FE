@@ -1,5 +1,20 @@
 <template>
-    <h1></h1>
+    <div id="OverviewList">
+
+        <ul v-for="user in Data" :key="user.id">
+            Name: {{user.name}} 
+
+            <li v-for="order in user.orders" :key="order.id" >
+
+                <ul v-for="product in order.products" :key="product.id">
+                    Product: {{product.productType}} | Sugar: {{product.sugar}} | Milk: {{product.milk}}
+                </ul>
+
+            </li>
+            <br>
+        </ul>
+
+    </div>
 </template>
 
 <script>
@@ -10,14 +25,16 @@ export default {
 
     data(){
         return{
-            Orders: [],
+            Data: [],
+            order: '',
+            
         };
     },
 
     async created(){
         try{
-            const res = await axios.get("")
-            this.Orders = res.data;
+            const res = await axios.get("https://localhost:44320/api/Products/all")
+            this.Data = res.data;
             console.log();
         }
         catch(e){
