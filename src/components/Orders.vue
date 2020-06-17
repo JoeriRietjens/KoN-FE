@@ -79,9 +79,7 @@ export default {
 
             
                 console.log(productDTO)
-                console.log(JSON.stringify(productDTO))
-
-           
+                console.log(JSON.stringify(productDTO))          
             }
             catch(e){
                 console.log(e);
