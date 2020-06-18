@@ -96,6 +96,7 @@ export default {
                 console.log(this.products)
 
             axios.post('https://localhost:44320/api/Products', JSON.stringify(productDTO), {headers:{'Content-Type':'application/json'}})
+<<<<<<< HEAD
 
             
 <<<<<<< HEAD
@@ -109,6 +110,11 @@ export default {
 
            
 >>>>>>> fded1f6bcb6ae616c4fc2971ac15a8ddf223d3d8
+=======
+                        
+                console.log(productDTO)
+                console.log(JSON.stringify(productDTO))          
+>>>>>>> 76e1bd84a413e6fb9594d4679fbe27d89a216c93
             }
             catch(e){
                 console.log(e);
