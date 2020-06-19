@@ -115,5 +115,5 @@ describe('Overview.vue', () => {
 
         axios.get.mockImplementationOnce(() => Promise.resolve(data))
     });
-})
+});
 

@@ -1,9 +1,11 @@
 <template>
     <div id="orders">
         <h3>{{SavedUsername}}</h3>
-        <li v-for="order in products" :key="order.productType">
-            Coffee: {{order.coffeeType}} | Sugar: {{order.sugar}} | Milk: {{order.milk}}
-        </li>
+        <ul>
+            <li v-for="order in products" :key="order.productType">
+                Coffee: {{order.coffeeType}} | Sugar: {{order.sugar}} | Milk: {{order.milk}}
+            </li>
+        </ul>
         <form @submit="addOrder">
             <input type="text" v-model="CoffeeType" name="CoffeeType" placeholder="What would you like to drink?">
             <input type="text" v-model="Sugar" name="Sugar" placeholder="Use less sugar you're sweet enough already">

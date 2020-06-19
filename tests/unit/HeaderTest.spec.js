@@ -25,5 +25,5 @@ describe('Header.vue', () => {
         expect(wrapper.html()).toContain(`<router-link to="/Overview">Order overview</router-link>`
         )
     })
-})
+});
 
