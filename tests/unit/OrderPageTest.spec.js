@@ -17,5 +17,5 @@ describe('Order.vue', () => {
         expect(wrapper.html()).toContain(`<input type=\"submit\" value=\"Place order\" class=\"placeOrderbtn\">`)      
     })
   
-});
+})
 

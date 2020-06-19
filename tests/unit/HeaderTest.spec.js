@@ -1,8 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import Header from '../../src/components/Header'
 
-describe('Header.vue', () => {
-
+function tests(){
     it('See if title is there', () => {
         const wrapper = shallowMount(Header)
         expect(wrapper.html()).toContain(`<h1>Koffie of nie!!</h1>`)
@@ -25,5 +24,7 @@ describe('Header.vue', () => {
         expect(wrapper.html()).toContain(`<router-link to="/Overview">Order overview</router-link>`
         )
     })
-});
+}
+    
+describe('Header.vue', () => tests())
 
