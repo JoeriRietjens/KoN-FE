@@ -19,6 +19,10 @@
         </form>
         
         <input @click="submitOrder" type="submit" value="Place order" class="placeOrderbtn">
+<<<<<<< HEAD
+
+=======
+>>>>>>> fded1f6bcb6ae616c4fc2971ac15a8ddf223d3d8
     </div>
 </template>
 
@@ -40,7 +44,11 @@ export default {
             CoffeeType: '',
             Sugar: '',
             Milk: '',
+<<<<<<< HEAD
+            //OrdersJson: ''
+=======
             
+>>>>>>> fded1f6bcb6ae616c4fc2971ac15a8ddf223d3d8
         };
     },
     methods: {
@@ -69,18 +77,46 @@ export default {
             }
             this.user = user;
 
+<<<<<<< HEAD
+            //this.products.push(this.SavedUsername)
+        },
+        submitOrder(){
+            try{
+                //console.log(this.products);
+                //this.OrdersJson = JSON.stringify(this.products);
+                //this.OrdersJson = JSON.parse(JSON.stringify(this.products))
+                //console.log(this.OrdersJson);
+
+=======
             
         },
         submitOrder(){
             try{
+>>>>>>> fded1f6bcb6ae616c4fc2971ac15a8ddf223d3d8
                 
                 const productDTO = { ...this.user, "products": this.products};
                 console.log(this.products)
 
             axios.post('https://localhost:44320/api/Products', JSON.stringify(productDTO), {headers:{'Content-Type':'application/json'}})
+<<<<<<< HEAD
+
+            
+<<<<<<< HEAD
+                    console.log(productDTO)
+                    console.log(JSON.stringify(productDTO))
+
+            //console.log("products send succesfully to api")
+=======
+                console.log(productDTO)
+                console.log(JSON.stringify(productDTO))
+
+           
+>>>>>>> fded1f6bcb6ae616c4fc2971ac15a8ddf223d3d8
+=======
                         
                 console.log(productDTO)
                 console.log(JSON.stringify(productDTO))          
+>>>>>>> 76e1bd84a413e6fb9594d4679fbe27d89a216c93
             }
             catch(e){
                 console.log(e);
